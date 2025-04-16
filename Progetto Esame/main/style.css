@@ -1,0 +1,330 @@
+html{
+    font-family: "Inter", sans-serif;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    background-image: url(imgs/windows.jpg);
+    background-attachment: fixed;
+}
+
+/*INIZIO HEADER*/ 
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#success, #plus{
+    width: 30px; height: 30px;
+    border-radius: 20px;
+}
+#success{
+    display: none;
+}
+.menuheader{
+    z-index: 100;
+    top: 0.3vw;
+    left: 1vw;
+    position: absolute;
+    box-shadow: 2px 1px 10px black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: min-content;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.tendina{
+    width: max-content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    width: max-content;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 1vh;
+    margin-left: 0.6vw;
+}
+
+#cat-prodotti{
+    width: min-content;
+    text-align: left;
+    margin-top: 1px;
+    padding-left: 10px;
+    margin-left: -3px;
+    border-left: 1.5px solid black;
+    display: none;
+}
+
+#login{
+    width: min-content;
+    margin-left: 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 0.6vw 1vw 0.6vw 1vw;
+    background-color: rgb(255, 8, 0);
+    font-size: larger;
+    color: rgb(255, 255, 255);
+}
+
+#magazzino{
+    display: none;
+}
+
+/*ANIMAZIONI HEADER*/ 
+
+header h3:hover, button:hover{
+    transition: 0.6s transform ease-in-out;
+    transform: scale(1.1);
+    border-bottom: 2px solid black;
+}
+
+#cat-prodotti p:hover{
+    transition: 0.6s transform ease-in-out;
+    transform: scale(1.1);
+}
+
+#visualizza{
+    margin: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visualizza p:nth-child(1){
+    font-size: large;
+    margin-right: 10px;
+    font-style: italic;
+}
+
+#visualizza p:nth-child(2){
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.logo{
+    overflow: hidden;
+    position: absolute;
+    top: 1.3vh;
+    right: 1vw;
+    width: min-content; height: min-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+
+}
+
+.logo img{
+    padding-left: 10px; padding-right: 10px;
+    width: 5vw;
+    height: 8vh;
+    rotate: -12deg;
+    border-radius: 20px;
+}
+
+/*Fine HEADER*/ 
+
+
+/*inizio MAIN*/ 
+
+.categorie{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+.cat_natura{
+    padding: 50px;
+}
+.prodotto{
+    background-color: white;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    transform:scale(0.95);
+    transition: transform 0.5s, box-shadow 0.5s;
+    &:hover{
+        transform: scale(1);
+        box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
+    }
+}
+
+.prodotto img:first-child{
+    height: 300px; width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.nomeprod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nomeprod div h4{
+    margin-top: -15px;
+    color: rgb(190, 2, 2);
+}
+
+.carrello{
+    width: 35px;height: 35px;
+    margin-top: 5px;
+    background-color: white;
+    transform:scale(0.90);
+}
+
+.carrello:hover{
+    transition: transform 0.5s ease-in-out;
+    transform:scale(1);
+}
+
+.nomeprod div select{
+    border: 1px solid black;
+    width: min-content;
+    border-radius: 20px;
+    appearance: none;
+    padding: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.nomeprod div:nth-child(2){
+    padding-left: 20px;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errore{
+    padding: 10px;
+    font-weight: 600;
+    font-size: large;
+    margin: -10px auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+    width: fit-content;
+    color: white;
+    display: none;
+}
+
+.vibrante {
+    display: inline-block;
+    animation: vibrazione 0.5s infinite;
+}
+
+/*SCONTRINO o CARRELLO*/
+
+footer{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: min-content;
+    background-color: white;
+    color: black;
+    bottom: 0;
+    box-shadow: 0 0 15px 1px black;
+    border-radius: 30px 0 0 30px;
+    display: none;
+}
+
+.scontrino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo2{
+    margin-top: 20px;
+    width: 5vw;
+    height: 8vh;
+    rotate: -12deg;
+    border-radius: 20px;
+}
+
+.riga{
+    height: min-content;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(217, 217, 217);
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.riga img{
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    width: 35px; height: 35px;
+}
+
+.totale{
+    text-align: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.acquista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acquista button{
+    height: 5vh;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+
+.acquista img{
+    height: 50px;
+    width: 50px;
+}
+
+.acquista img:hover{
+    transition: 0.5ms margin-left ease-in-out;
+    margin-left: 30px;
+}
+
+#acquista{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:700px){
+    #visualizza{
+        margin-top: 8vh;
+    }
+}

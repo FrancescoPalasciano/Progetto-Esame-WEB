@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magazzino.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
+    </style>
+    <title>Magazzino</title>
+</head>
+<body>
+    <header id="home">
+        <img src="imgs/casettahome.svg" alt="casettahome" class="home">
+    </header>
+    <h1>Magazzino: </h1>
+    <div id="magazzino"></div>
+    <div id="aggiungi">
+        <button id="btnaggiungi" class="aggbtn">Aggiungi prodotto</button>
+        <div class="fila" id="fila_aggiungi" style="display: flex;">
+            <input type="text" id="nuovoNome" placeholder="Nome prodotto">
+            <h2 class="prezzo">
+                <input type="number" id="nuovoPrezzo1" placeholder="Prezzo 1024" min="0">
+                <input type="number" id="nuovoPrezzo2" placeholder="Prezzo 1920" min="0">
+            </h2>
+            <div class="destra">
+                <select id="nuovaCategoria">
+                    <option value="natura">Natura</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="videogiochi">Videogiochi</option>
+                </select>
+                <input type="text" id="nuovoImmagineUrl" placeholder="URL immagine">
+                <button id="aggbtn">Aggiungi</button>
+            </div>
+        </div>
+    </div>
+    <script src="magazzino.js"></script>
+</body>
+</html>

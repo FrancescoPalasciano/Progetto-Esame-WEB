@@ -1,0 +1,78 @@
+html{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background-image: url(imgs/login\ sfondo.jpg);
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+    width: 6vw;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    border-radius: 40px 5px 5px 40px;
+    box-shadow: 5px 5px 10px 1px black;
+}
+
+.home{
+    width: 40px;
+}
+
+.home:hover{
+    transition: 0.5ms transform ease-in-out;
+    transform: scale(1.1);
+}
+
+header:hover{
+    transition: 0.5ms margin-left ease-in-out;
+    margin-left: 10px;
+}
+
+.bigbox{
+    width: min-content;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px 1px rgb(255, 0, 0);
+    margin-top: 15vh;
+}
+
+.box-login input{
+    border: 1px solid black;
+    box-shadow: 0 0 3px 1px black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: inter;
+}
+
+.box-login button{
+    height: 4vh;
+    width: fit-content;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 1px black;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 15px auto 0;
+}
+
+.box-login p {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 14px;
+    text-decoration: underline;
+    font-style: italic;
+}

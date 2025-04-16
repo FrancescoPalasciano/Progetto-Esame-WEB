@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&display=swap');
+    </style>
+    <title>POSTERshop</title>
+</head>
+<body>
+    <header>
+        <div class="menuheader" id="header">
+
+            <div class="tendina">
+                <img id="plus" src="imgs/burger menu.svg">
+                <img id="success" src="imgs/burger menu.svg">
+                <button id="login">Login</button>
+            </div>
+
+            <div class="menu" id="menu">
+                <h3 id="lista-prodotti">Categorie</h3>
+                <div id="cat-prodotti">
+                    <p id="tuttoclick">Tutto</p>
+                    <p id="naturaclick">Natura</p>
+                    <p id="tecnologiaclick">Tecnologia</p>
+                    <p id="videogiochiclick">Videogiochi</p>
+                </div>
+                <h3 id="magazzino">Magazzino</h3>
+                <h3 id="pagina_car">Carrello</h3>
+            </div>
+        </div>
+        <div id="visualizza">
+            <p>Stai visualizzando la categoria: </p>
+            <p id="vis_cat">Tutto</p>
+        </div>
+
+        <div class="logo">
+            <img src="imgs/logo.png">
+        </div>
+
+    </header>
+    <main>
+        <div class="categorie" id="natura"></div>
+        <div class="categorie" id="tecnologia"></div>
+        <div class="categorie" id="videogiochi"></div>
+    </main>
+
+    <footer id="footer">
+        <div class="scontrino">
+            <div>
+                <img class="logo2" src="imgs/logo.png">
+            </div>
+            <div class="totale">
+                <h1>Carrello:</h1>
+                <h1 style="color: rgb(255, 51, 0);" id="totale">0$</h1>
+            </div>
+            <div id="scontrino"></div>
+            <div class="acquista">
+                <button id="acquista">Acquista</button>
+                <img id="freccia" src="imgs/freccia.svg" alt="casetta">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

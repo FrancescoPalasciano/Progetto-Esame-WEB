@@ -1,0 +1,137 @@
+html{
+    margin: 0;
+    font-family: inter;
+    background-image: url(imgs/login\ sfondo.jpg);
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+    flex: 1 1 7vw;
+    max-width: 10vw;
+    min-width: 7vw;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+    border-radius: 40px 5px 5px 40px;
+    box-shadow: 5px 5px 10px 1px black;
+    margin: 1vh;
+}
+
+.home{
+    width: 40px;
+}
+
+.home:hover{
+    transition: 0.5ms transform ease-in-out;
+    transform: scale(1.1);
+}
+
+h1{
+    color: white;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+#magazzino{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fila{
+    display: flex;
+    flex-wrap: wrap;
+    flex:  1 1 500px;
+    max-width: 600px;
+    min-width: 200px;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px black;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.fila img{
+    width: min-content;
+    height: 7vh;
+}
+
+.fila input{
+    border: 2px solid rgb(255, 0, 0);
+    margin: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    min-width: 60px;
+    max-width: 100px;
+}
+
+.destra{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fila select{
+    font-family: inter;
+    height: 3vh;
+    border-radius: 5px;
+}
+
+.fila button{
+    font-family: inter;
+    height: 3vh;
+    font-weight: 600;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 1px black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#aggiungi{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin-top: 30px;
+}
+
+.aggbtn{
+    padding: 10px;
+    height: 6vh;
+    font-size: larger;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px 1px black;
+}
+
+#magazzino h2{
+    white-space: nowrap;
+}
+
